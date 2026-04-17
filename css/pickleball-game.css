@@ -1,0 +1,168 @@
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: "Times New Roman", Times, serif;
+  background: #9caf88;
+  color: #ffffff;
+}
+
+.game-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.25rem 1.5rem;
+  background: #ffffff;
+  color: #3e4f3c;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.game-header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.game-actions {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.game-link,
+.game-button {
+  display: inline-block;
+  padding: 0.75rem 1.25rem;
+  background: #ffffff;
+  color: #3e4f3c;
+  text-decoration: none;
+  border: 2px solid #3e4f3c;
+  border-radius: 0.5rem;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.game-link:hover,
+.game-button:hover {
+  background: #dfe8d8;
+}
+
+.game-layout {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem 3rem;
+}
+
+.game-panel {
+  position: relative;
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
+}
+
+#confetti-canvas {
+  position: absolute;
+  left: 50%;
+  top: 126px;
+  width: calc(100% - 3rem);
+  max-width: 960px;
+  height: auto;
+  transform: translateX(-50%);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.start-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 31, 63, 0.45);
+  border-radius: 1rem;
+  z-index: 2;
+}
+
+.start-overlay.hidden {
+  display: none;
+}
+
+.start-card {
+  padding: 2rem 2.5rem;
+  border-radius: 1rem;
+  background: rgba(255, 255, 255, 0.95);
+  color: #3e4f3c;
+  text-align: center;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.14);
+}
+
+.start-card h2 {
+  margin: 0 0 1rem;
+  font-size: 1.8rem;
+}
+
+.start-button {
+  min-width: 180px;
+}
+
+.scoreboard {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+.score-box {
+  min-width: 140px;
+  padding: 0.85rem 1.25rem;
+  background: rgba(255, 255, 255, 0.16);
+  border-radius: 0.75rem;
+  text-align: center;
+}
+
+.score-label {
+  display: block;
+  font-size: 0.95rem;
+  letter-spacing: 0.04rem;
+  text-transform: uppercase;
+}
+
+.score-value {
+  display: block;
+  margin-top: 0.35rem;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.game-status {
+  margin: 0 0 1rem;
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+#game-canvas {
+  display: block;
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  background: #2f7d59;
+  border: 6px solid #ffffff;
+  border-radius: 1rem;
+}
+
+.game-help {
+  margin: 1rem 0 0;
+  text-align: center;
+  font-size: 1.05rem;
+}
+
+@media (max-width: 700px) {
+  .game-header {
+    flex-direction: column;
+    text-align: center;
+  }
+}

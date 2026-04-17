@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Pickleball Game</title>
+        <link href="css/pickleball-game.css" rel="stylesheet" />
+    </head>
+    <body>
+        <header class="game-header">
+            <h1>Pickleball Game</h1>
+            <div class="game-actions">
+                <a class="game-link" href="scratch.html">Back to Scratch</a>
+                <button class="game-button" id="restart-button" type="button">Restart Game</button>
+                <button class="game-button" id="pause-button" type="button">Pause</button>
+            </div>
+        </header>
+
+        <main class="game-layout">
+            <section class="game-panel">
+                <canvas id="confetti-canvas" width="960" height="540" aria-hidden="true"></canvas>
+                <div class="start-overlay" id="start-overlay">
+                    <div class="start-card">
+                        <h2>Ready to Play?</h2>
+                        <button class="game-button start-button" id="start-button" type="button">Start Game</button>
+                    </div>
+                </div>
+                <div class="scoreboard">
+                    <div class="score-box">
+                        <span class="score-label">Player</span>
+                        <span class="score-value" id="player-score">0</span>
+                    </div>
+                    <div class="score-box">
+                        <span class="score-label">AI</span>
+                        <span class="score-value" id="ai-score">0</span>
+                    </div>
+                </div>
+                <p class="game-status" id="game-status">First to 11, win by 2.</p>
+                <canvas id="game-canvas" width="960" height="540"></canvas>
+                <p class="game-help">Use <strong>W/S</strong> or the <strong>Up/Down Arrow</strong> keys to move your paddle.</p>
+            </section>
+        </main>
+
+        <script src="js/pickleball-game.js"></script>
+    </body>
+</html>

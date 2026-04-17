@@ -1,0 +1,122 @@
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: "Times New Roman", Times, serif;
+  color: #ffffff;
+  background: #9caf88;
+}
+
+.page-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  color: #3e4f3c;
+  min-height: 5.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.page-header h1 {
+  margin: 0;
+  font-size: 2.25rem;
+  font-weight: 700;
+}
+
+.top-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.75rem;
+  padding: 1.5rem;
+}
+
+.page-content {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 1.5rem 3rem;
+}
+
+.image-panel {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.image-panel img {
+  width: 100%;
+  max-width: 760px;
+  border: 6px solid #ffffff;
+  border-radius: 1rem;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+}
+
+.intro-panel {
+  background: rgba(255, 255, 255, 0.12);
+  padding: 1.5rem;
+  border-radius: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.info-card {
+  background: rgba(255, 255, 255, 0.12);
+  padding: 1.25rem;
+  border-radius: 1rem;
+}
+
+.content-row {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 1.5rem;
+  align-items: start;
+}
+
+.video-panel {
+  display: flex;
+  justify-content: center;
+}
+
+.video-panel iframe {
+  width: 100%;
+  min-height: 315px;
+  border: 6px solid #ffffff;
+  border-radius: 1rem;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+}
+
+.tableau-section {
+  margin-top: 2rem;
+}
+
+.tableau-section .tableauPlaceholder {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+@media (max-width: 800px) {
+  .content-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+.resume-link {
+  display: inline-block;
+  padding: 0.8rem 1.4rem;
+  background: #ffffff;
+  color: #3e4f3c;
+  text-decoration: none;
+  border-radius: 0.5rem;
+  border: 2px solid #3e4f3c;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.resume-link:hover {
+  background: #dfe8d8;
+  color: #3e4f3c;
+}
